@@ -68,8 +68,54 @@ exclude_patterns = []
 #html_theme = "sphinx_rtd_theme"
 html_theme = "furo"
 
+html_static_path = ["_static"]
+
+html_logo = "HKUSTGZ_logo.png"
+
+html_css_files = [
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css",
+]
+
+html_theme_options = {
+    "sidebar_hide_name": True,
+    "top_of_page_button": "edit",
+
+    "light_logo": "MICS_logo.png",
+    "dark_logo": "MICS_logo.png",
+
+    # "announcement": "<em>Important</em> announcement!",
+
+    # "light_css_variables": {
+    #     "color-brand-primary": "#2b1216",
+    #     "color-brand-content": "#ed556a",
+    #     "color-admonition-background": "orange",
+
+    # },
+
+    "footer_icons": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/BenjaminChen1024/rlrobot-book",
+            "html": "",
+            "class": "fa-brands fa-github fa-2x",
+        },
+
+        {
+            "name": "thumbs-up",
+            "url": "https://blog.csdn.net/jermy00?spm=1000.2115.3001.5343",
+            "html": "",
+            "class": "fa-regular fa-thumbs-up fa-2x",
+        },
+    ],
+
+}
+
+html_title = "👋🏻 RL Robot Book 😘"
+
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-htmlhelp_basename = 'Recommonmarkdoc'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
